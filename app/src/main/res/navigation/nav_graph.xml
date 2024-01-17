@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/basicLightFragment">
+
+
+    <activity
+        android:id="@+id/lightSensorActivity2"
+        android:name="com.family.lucky.lightSensor.LightSensorActivity"
+        android:label="activity_light_sensor"
+        tools:layout="@layout/activity_light_sensor" />
+    <fragment
+        android:id="@+id/basicLightFragment"
+        android:name="com.family.lucky.lightSensor.fragments.BasicLightFragment"
+        android:label="fragment_basic_light"
+        tools:layout="@layout/fragment_basic_light" />
+    <fragment
+        android:id="@+id/adjustScreenFragment"
+        android:name="com.family.lucky.lightSensor.fragments.AdjustScreenFragment"
+        android:label="fragment_adjust_screen"
+        tools:layout="@layout/fragment_adjust_screen" />
+    <fragment
+        android:id="@+id/usingLightFragment2"
+        android:name="com.family.lucky.lightSensor.fragments.UsingLightFragment"
+        android:label="fragment_using_light"
+        tools:layout="@layout/fragment_using_light" />
+
+
+</navigation>

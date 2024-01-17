@@ -1,4 +1,4 @@
-package com.family.lucky
+package com.family.lucky.proximitySensor
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity

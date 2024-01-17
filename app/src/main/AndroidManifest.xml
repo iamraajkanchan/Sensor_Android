@@ -13,12 +13,15 @@
         android:theme="@style/Theme.Sensor_Android"
         tools:targetApi="31">
         <activity
-            android:name=".ProximitySensorActivity"
+            android:name=".lightSensor.LightFragmentHolder"
+            android:exported="false" />
+        <activity
+            android:name=".proximitySensor.ProximitySensorActivity"
             android:exported="false"
             android:label="@string/title_activity_proximity_sensor"
             android:theme="@style/Theme.Sensor_Android" />
         <activity
-            android:name=".LightSensorActivity"
+            android:name=".lightSensor.LightSensorActivity"
             android:exported="false" />
         <activity
             android:name=".MainActivity"

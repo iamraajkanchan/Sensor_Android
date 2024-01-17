@@ -1,4 +1,4 @@
-package com.family.lucky
+package com.family.lucky.lightSensor
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle

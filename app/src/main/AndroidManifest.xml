@@ -17,9 +17,7 @@
             android:exported="false" />
         <activity
             android:name=".proximitySensor.ProximitySensorActivity"
-            android:exported="false"
-            android:label="@string/title_activity_proximity_sensor"
-            android:theme="@style/Theme.Sensor_Android" />
+            android:exported="false" />
         <activity
             android:name=".lightSensor.LightSensorActivity"
             android:exported="false" />

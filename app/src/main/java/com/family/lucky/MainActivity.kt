@@ -3,6 +3,7 @@ package com.family.lucky
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.family.lucky.compass.Compass
 import com.family.lucky.databinding.ActivityMainBinding
 import com.family.lucky.lightSensor.LightSensorActivity
 import com.family.lucky.proximitySensor.ProximitySensorActivity
@@ -27,6 +28,11 @@ class MainActivity : AppCompatActivity() {
         }
         binding.btnProximitySensor.setOnClickListener {
             Intent(this@MainActivity, ProximitySensorActivity::class.java).apply {
+                startActivity(this)
+            }
+        }
+        binding.btnCompass.setOnClickListener {
+            Intent(this@MainActivity, Compass::class.java).apply {
                 startActivity(this)
             }
         }

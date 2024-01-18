@@ -13,6 +13,9 @@
         android:theme="@style/Theme.Sensor_Android"
         tools:targetApi="31">
         <activity
+            android:name=".compass.Compass"
+            android:exported="false" />
+        <activity
             android:name=".lightSensor.LightFragmentHolder"
             android:exported="false" />
         <activity

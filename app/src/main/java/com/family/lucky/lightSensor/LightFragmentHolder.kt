@@ -5,7 +5,7 @@ import android.os.Bundle
 import com.family.lucky.databinding.ActivityLightFragmentHolderBinding
 import com.family.lucky.lightSensor.fragments.AdjustScreenFragment
 import com.family.lucky.lightSensor.fragments.BasicLightFragment
-import com.family.lucky.lightSensor.fragments.UsingLightFragment
+import com.family.lucky.lightSensor.fragments.LightAccuracyFragment
 
 class LightFragmentHolder : AppCompatActivity() {
     private lateinit var binding: ActivityLightFragmentHolderBinding
@@ -23,7 +23,7 @@ class LightFragmentHolder : AppCompatActivity() {
     private fun initViews() {
         val basicLightFragment = BasicLightFragment.newInstance()
         val adjustScreenFragment = AdjustScreenFragment.newInstance()
-        val usingLightFragment = UsingLightFragment.newInstance()
+        val lightAccuracyFragment = LightAccuracyFragment.newInstance()
         val fragmentTransaction = supportFragmentManager.beginTransaction()
         when (fragmentExtra) {
             BASIC_LIGHT -> {
@@ -34,8 +34,8 @@ class LightFragmentHolder : AppCompatActivity() {
                 fragmentTransaction.replace(binding.fcvFragment.id, adjustScreenFragment)
             }
 
-            USING_LIGHT -> {
-                fragmentTransaction.replace(binding.fcvFragment.id, usingLightFragment)
+            LIGHT_ACCURACY -> {
+                fragmentTransaction.replace(binding.fcvFragment.id, lightAccuracyFragment)
             }
             else -> {
                 return
@@ -49,6 +49,6 @@ class LightFragmentHolder : AppCompatActivity() {
         const val FRAGMENT_EXTRA = "fragment"
         const val BASIC_LIGHT = "basic light fragment"
         const val ADJUST_SCREEN = "adjust screen fragment"
-        const val USING_LIGHT = "using light fragment"
+        const val LIGHT_ACCURACY = "light accuracy fragment"
     }
 }

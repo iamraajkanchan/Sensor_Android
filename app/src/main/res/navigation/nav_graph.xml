@@ -25,7 +25,7 @@
         android:id="@+id/usingLightFragment2"
         android:name="com.family.lucky.lightSensor.fragments.UsingLightFragment"
         android:label="fragment_using_light"
-        tools:layout="@layout/fragment_using_light" />
+        tools:layout="@layout/fragment_light_accuracy" />
 
 
 </navigation>

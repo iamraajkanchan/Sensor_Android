@@ -36,4 +36,14 @@
         app:layout_constraintStart_toStartOf="@id/btnProximitySensor"
         app:layout_constraintTop_toBottomOf="@id/btnProximitySensor" />
 
+    <Button
+        android:id="@+id/btnCompass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:text="Compass"
+        app:layout_constraintBottom_toTopOf="@id/btnLightSensor"
+        app:layout_constraintEnd_toEndOf="@id/btnProximitySensor"
+        app:layout_constraintStart_toStartOf="@id/btnProximitySensor" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -29,7 +29,7 @@ class LightSensorActivity : AppCompatActivity() {
         }
         binding.btnUsingLight.setOnClickListener {
             Intent(this@LightSensorActivity, LightFragmentHolder::class.java).apply {
-                putExtra(LightFragmentHolder.FRAGMENT_EXTRA, LightFragmentHolder.USING_LIGHT)
+                putExtra(LightFragmentHolder.FRAGMENT_EXTRA, LightFragmentHolder.LIGHT_ACCURACY)
                 startActivity(this)
             }
         }
